@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for in</title>
+</head>
+<body>
+    <h1>for in</h1>
+    <script>
+        // for in is used to loop in object properties
+        let name = 'modcom'
+        let students =['john','mary','james','jane','jacob']
+        for(letter in name){
+            document.write(name[letter])
+            document.write('&nbsp')
+        }
+
+        document.write('<br /><br />')
+
+        for(name in students){
+            document.write(students[name])
+            document.write('&nbsp')
+        }
+    </script>
+</body>
+</html>
