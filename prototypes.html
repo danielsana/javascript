@@ -6,6 +6,32 @@
     <title>javascript prototypes</title>
 </head>
 <body>
-    
+    <h1>javascript prototypes</h1>
+    <script>
+        // Prototype property is basically an object (also known as Prototype object), where we can attach methods and properties in a prototype object, which enables all the other objects to inherit these methods and properties.
+
+        function Person(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+        }
+        Person.nationality = "English"; // this cant work
+        Person.prototype.nationality = "English"; // this works
+        let myFather = new Person("John", "Doe", 50, "blue");
+        let myMother = new Person("Sally", "Rally", 48, "green");
+
+        document.write(myFather.nationality);
+        document.write("<br/>");
+        document.write("<br/>");
+        // The JavaScript prototype property also allows you to add new methods to objects constructors:
+
+        Person.prototype.name = function() {
+        return this.firstName + " " + this.lastName
+        };
+
+        document.write(myFather.name());
+
+    </script>
 </body>
 </html>
