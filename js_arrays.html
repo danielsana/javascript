@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js arrays</title>
+</head>
+<body>
+    <h1>javascript arrays</h1>
+
+    <script>
+        let fruits = new Array("apple", "orange", "mango")
+
+        // print items in the array
+        // use a for_of loop
+        for (fruit of fruits){
+            document.write(fruit)
+            document.write('&nbsp')
+        }
+
+        document.write('<br />')
+        document.write('<br />')
+
+
+        // create arry of numbers and use for loop to view the array items
+
+        let nums = new Array(23, 34, 45, 54,78)
+
+        // print items in the array
+        // use a for_of loop
+        for (num of nums){
+            document.write(num)
+            document.write('&nbsp')
+        }
+
+        document.write('<br />')
+        document.write('<br />')
+
+        // check the lenght of an array
+        // use a property of length
+        // syntax is fruits.lenght
+
+        document.write("The lenght of fruits array is : "+ fruits.length)
+
+        document.write('<br />')
+        document.write('<br />')
+
+        // joining two or more arrays using concat() method
+        // syntax array1.concat(array2,array3..)
+
+        let myarray =fruits.concat(nums)
+        document.write("This is my new array : "+ myarray)
+
+        document.write('<br />')
+        document.write('<br />')
+
+        // use join()method to create one from array elements
+        let names = new Array('james','john','mike','jane','boaz')
+        let mynames = names.join(" * ")
+        document.write("the string of names is :"+ mynames)
+
+        document.write('<br />')
+        document.write('<br />')
+
+        // pop()method used to remove the lST ITEM FROM N ARRAY
+        // array.pop();
+        names.pop()
+        for (name of names){
+            document.write(name)
+            document.write('&nbsp')
+        }
+
+        document.write('<br />')
+        document.write('<br />')
+        
+        // push()method used to append an item at the end of the array 
+        names.push("paul","john")
+        for (name of names){
+            document.write(name)
+            document.write('&nbsp')
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript maps</title>
+
+    <p>Creating a Map from an Array:</p>
+    <p id="prices"></p>
+</head>
+<body>
+    <h1>javascript maps</h1>
+    <script>
+
+        // JavaScript map is a collection of elements where each element is stored as a Key, value pair.
+        // Map objects can hold both objects and primitive values as either key or value.
+        // On iterating a map object returns the key, and value pair in the same order as inserted.
+        // Map() constructor is used to create Map in JavaScript.
+
+        // map constructor
+        const map1 = new Map();
+
+        // Creating a Map for product prices
+        const prices = new Map([   
+        ["Laptop", 1000],
+        ["Smartphone", 800],
+        ["Tablet", 400] 
+        ]);
+
+        // view items in a map
+        // this will show in the console
+        console.log(prices)
+        
+        // Access a value of a key in a map
+        document.getElementById("prices").innerHTML = prices.get("Laptop");
+
+        // add a key value pair in a map
+        // use set()
+        prices.set("smartTv",30000)
+
+        // view items in a map again
+        // this will show in the console
+        console.log(prices)
+
+    </script>
+    </body>
+</html>

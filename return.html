@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return in js</title>
+</head>
+<body>
+    <h1>use of return</h1>
+
+    <button onclick="mynames()">call mynames</button>
+
+    <script>
+        function joinnames(first,last){
+            let fullname ;
+            fullname= first+" "+last;
+            return fullname;
+        }
+
+        function mynames(){
+            let myname = joinnames(first="omondi",last="ken" );
+            document.write(myname)
+        }
+    </script>
+</body>
+</html>

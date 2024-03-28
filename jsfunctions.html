@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js functions</title>
+</head>
+<body>
+    <h2>js functions</h2> <br>
+
+    <button id="greet" onclick="greetme()">see greeting</button> 
+    
+    <br><br>
+    <script>
+        // document.getElementById("greet").onclick = greetme(name="mike")
+        // function declaration
+        function sayHello() {
+        
+        // function body
+            document.write ("Hello there!");
+        }
+
+        // calling function
+        sayHello()
+        sayHello()
+
+        document.write("<br />")
+        document.write("<br />")
+
+        // addition
+        // function addition() {
+        //     let num1 = 23;
+        //     let num2 = 45;
+
+        //     let answer = num1+num2
+        //     document.write("The addition is : ", answer)
+        // }
+
+        // addition()
+
+
+        document.write("<br />")
+        document.write("<br />")
+
+        // functions with parameters
+
+        // addition with parameters
+        function addition(num1,num2) {
+           
+            let answer = num1+num2
+            document.write("The addition is : ", answer)
+        }
+
+        addition(num1=12,num2=13)
+
+        document.write("<br />")
+        document.write("<br />")
+
+        addition(num1=19,num2=43)
+
+        // try multiplication of two numbers
+        
+        document.write("<br />")
+        document.write("<br />")
+
+        // function calculate area of a circle 
+
+        function areaCircle(radius,pie){
+            area =pie*radius**2
+            document.write("The area is : ",area)
+        }
+
+        areaCircle(radius=14,pie=3.14)
+
+        document.write("<br />")
+        document.write("<br />")
+
+        // use return keyword
+
+        function greetme(){
+            document.getElementById("greet").innerHTML="Hello mike"
+  
+        }
+
+    </script>
+</body>
+</html>

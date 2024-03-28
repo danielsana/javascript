@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions question</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+
+    <script>
+        let names = new Array('james','john','mike','jane','boaz')
+
+        let search_name = "marion"
+        let found_name = false
+
+        for (name of names){
+            if (name == search_name){
+                found_name=true
+                break;
+            }
+        }
+
+        if (found_name){
+            document.write('the name'+' '+search_name+' '+'was found')
+        }
+
+        document.write('<br />')
+        document.write('<br />')
+    </script>
+</body>
+</html>
